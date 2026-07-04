@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.layout {
+  width: 640px;
+  margin: 0 auto;
+}
+
+/* 上方內容 */
+.content {
+  display: flex;
+}
+
+/* 左側消息列表 */
+.news-list {
+  width: 404px;
+  margin-right: 20px;
+}
+
+.news-item {
+  display: flex;
+  width: 404px;
+  height: 96px;
+}
+
+/* 只有第二則消息需要上方間距 */
+.news-item + .news-item {
+  margin-top: 24px;
+}
+
+.news-image {
+  width: 96px;
+  height: 96px;
+  margin-right: 20px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.news-text {
+  width: 288px;
+  height: 96px;
+  overflow: hidden;
+}
+
+.news-text h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.news-text p {
+  height: 72px;
+  margin: 0;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* 右側廣告 */
+.adv {
+  width: 216px;
+  height: 216px;
+}
+
+.adv img {
+  display: block;
+  width: 216px;
+  height: 216px;
+  object-fit: cover;
+}
+
+/* 下方文字 */
+.bottom-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 640px;
+  height: 120px;
+  margin-top: 24px;
+}
+
+.bottom-text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
